@@ -1,0 +1,30 @@
+{
+	"Students": [{
+			"No": "1",
+			"Name": "Hasan Nazım",
+			"LastName": "Akyol",
+			"FirstGrade": "",
+			"FinalGrade": "",
+			"MeanGrade": "",
+			"LetterGrade": ""
+		}, {
+			"No": "2",
+			"Name": "Ayşe",
+			"LastName": "Kor",
+			"FirstGrade": "",
+			"FinalGrade": "",
+			"MeanGrade": "",
+			"LetterGrade": ""
+		}, {
+			"No": "3",
+			"Name": "Mehmet",
+			"LastName": "Akyol",
+			"FirstGrade": "",
+			"FinalGrade": "",
+			"MeanGrade": "",
+			"LetterGrade": ""
+		}
+
+	]
+
+}

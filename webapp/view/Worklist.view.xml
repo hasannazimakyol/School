@@ -1,0 +1,13 @@
+<mvc:View controllerName="hnakyol.School.controller.Worklist" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.f.semantic">
+	<semantic:SemanticPage id="page" headerPinnable="false" toggleHeaderOnTitleClick="false">
+		<semantic:titleHeading>
+			<Title text="{i18n>worklistTitle}"/>
+		</semantic:titleHeading>
+		<semantic:content>
+			<Panel>
+				<mvc:XMLView viewName="hnakyol.School.view.Header"/>
+			</Panel>
+			<mvc:XMLView viewName="hnakyol.School.view.StudentsList"/>
+		</semantic:content>
+	</semantic:SemanticPage>
+</mvc:View>

@@ -1,0 +1,51 @@
+* {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.Image {
+    height: 75px;
+    width: 100px;
+}
+
+.studentInfoBox {
+    margin: 50px;
+    text-align: center;
+}
+
+#pageTitle {
+	text-align: center;
+}
+
+.studentInfoLabel {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-variant: small-caps;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 2px grey;
+}
+
+.studentInfoText {
+    font-size: 1.2em;
+    text-transform: capitalize;
+    font-family: 'Benne', serif;
+    font-weight: bold;
+    margin-top: 1.2em;
+}
+
+.red {
+	color:red;
+	
+}
+
+.green {
+	color:green;
+	
+}
+
+.blue {
+	color:blue;
+	
+}

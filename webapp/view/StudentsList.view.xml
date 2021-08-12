@@ -1,0 +1,46 @@
+<mvc:View height="100%" controllerName="hnakyol.School.controller.Worklist" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core"
+	xmlns="sap.m">
+	<core:InvisibleText id="text1" text="Label text"/>
+	<Page showHeader="false" enableScrolling="true" class="sapUiContentPadding" showNavButton="false">
+		<content>
+			<!--<VBox>-->
+			<!--	<Title text="Students" textAlign="Center"/>-->
+			<!--</VBox>-->
+			<!--<Label/>-->
+			<Table id="idStudentsTable" items="{ path: 'student>/Students' }">
+				<headerToolbar>
+					<Toolbar>
+						<Title id="studentHeader" text="Students of MBIS"/>
+						<ToolbarSpacer/>
+						<SearchField search=".onFilterStudents" width="auto"></SearchField>
+						<Button id="addButton" icon="sap-icon://add-employee" text="Add Student" press="onCreateStudent" class="sapUiSmallMarginEnd"/>
+						<Button id="openNotes" icon="sap-icon://list" text="Note List" press="onOpenNoteList" class="sapUiSmallMarginEnd"/>
+					</Toolbar>
+				</headerToolbar>
+
+				<columns>
+					<Column width="12em"><Text text="No"/></Column>
+					<Column minScreenWidth="Tablet" demandPopin="true"><Text text="First Name"/></Column>
+					<Column minScreenWidth="Tablet" demandPopin="true" hAlign="End"><Text text="Last Name"/></Column>
+					<Column hAlign="End"><Text text=""/></Column>
+				</columns>
+				<items>
+					<ColumnListItem type="Navigation" press="onPress">
+						<cells>
+							<!--<ObjectIdentifier title="{Name}" text="{ProductId}" />-->
+							<Text text="{student>No}"/>
+							<Text text="{student>Name}"/>
+							<Text text="{student>LastName}"/>
+							<Button icon="sap-icon://delete" press="onPressDeleteStudent"></Button>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+		<footer>
+			<!--<OverflowToolbar id="otbFooter">
+
+			</OverflowToolbar>-->
+		</footer>
+	</Page>
+</mvc:View>

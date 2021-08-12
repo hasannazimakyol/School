@@ -1,0 +1,27 @@
+<!--<mvc:View controllerName="mbis.Blackpool.controller.Detail" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">-->
+<!--	<Page title="Player">-->
+<!--		<ObjectHeader intro="{student>Name}" title="{student>Surname}"/>-->
+<!--	</Page>-->
+<!--</mvc:View>-->
+<mvc:View controllerName="hnakyol.School.controller.Detail" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<Page title="Student Detail Page" showNavButton="true" navButtonPress=".onNavBack">
+		<Panel>
+			<mvc:XMLView viewName="hnakyol.School.view.Header"/>
+		</Panel>
+		<ObjectHeader intro="{student>LastName}" title="{student>Name}" icon="sap-icon://eraser" iconDensityAware="false" iconAlt="{student>Name}"
+			imageShape="Circle" responsive="true"/>
+		<l:VerticalLayout class="sapUiContentPadding" width="100%">
+			<l:content>
+				<List headerText="Student Information">
+					<DisplayListItem label="No" value="{student>No}"/>
+					<DisplayListItem label="Name" value="{student>Name}"/>
+					<DisplayListItem label="Last Name" value="{student>LastName}"/>
+					<DisplayListItem label="First Grade" value="{student>FirstGrade}"/>
+					<DisplayListItem label="Final Grade" value="{student>FinalGrade}"/>
+					<DisplayListItem label="Mean Grade" value="{student>MeanGrade}"/>
+					<DisplayListItem label="Letter Grade" value="{student>LetterGrade}"/>
+				</List>
+			</l:content>
+		</l:VerticalLayout>
+	</Page>
+</mvc:View>

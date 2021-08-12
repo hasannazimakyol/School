@@ -1,0 +1,34 @@
+<!--<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="hnakyol.School.controller.Worklist"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<HBox fitContainer="true" alignItems="Stretch" class="sapUiSmallMargin nestedFlexboxes" justifyContent="SpaceAround">
+		<Image src="" width="130px" height="130px" class="sapUiMediumMarginTopBottom"/>
+		<Image src="" width="130px" height="130px" class="sapUiMediumMarginTopBottom"/>
+		<HBox fitContainer="true" alignItems="Stretch" justifyContent="SpaceBetween">
+			<VBox class="schoolInfoBox" justifyContent="SpaceAround">
+				<Label class="schoolInfoLabel" text="School Name"/>
+				<Text class="schoolInfoText" text="MBIS"></Text>
+			</VBox>
+		</HBox>
+	</HBox>
+</mvc:View>-->
+
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="hnakyol.School.controller.Detail"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<HBox fitContainer="true" alignItems="Stretch" class="sapUiSmallMargin nestedFlexboxes" justifyContent="SpaceAround">
+		<!--<Image src="{/team/imageUrl}" width="130px" height="130px" class="sapUiMediumMarginTopBottom"/>-->
+		<HBox fitContainer="true" alignItems="Stretch" justifyContent="SpaceBetween">
+			<VBox class="studentInfoBox" justifyContent="SpaceAround">
+				<Label class="studentInfoLabel" text="Name"/>
+				<Text class="studentInfoText" text="{student>Name}"></Text>
+			</VBox>
+			<VBox class="studentInfoBox" justifyContent="SpaceAround">
+				<Label class="studentInfoLabel" text="Last Name"/>
+				<Text class="studentInfoText" text="{student>LastName}"></Text>
+			</VBox>
+			<VBox class="studentInfoBox" justifyContent="SpaceAround">
+				<Label class="studentInfoLabel" text="Letter Grade"/>
+				<Text class="studentInfoText" text="{student>LetterGrade}"></Text>
+			</VBox>
+		</HBox>
+	</HBox>
+</mvc:View>
